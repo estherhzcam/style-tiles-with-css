@@ -1,8 +1,10 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Mallanna&family=Montserrat+Subrayada&family=Syncopate&display=swap');
+
 
 * {
   box-sizing: border-box;
@@ -14,14 +16,14 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #000000;
+  --link-color: #00A99D;
+  --link-hover-color: #858988;
+  --color-4: #FBB03B;
+  --color-5: #B85CFF;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --primary-font: "Julius Sans One", sans-serif;
+  --secondary-font: "Mallanna", sans-serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
@@ -35,7 +37,7 @@ a {
 }
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  transform: translateY(-20px)
 }
 
 button:active {
@@ -44,7 +46,7 @@ button:active {
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
+  font-size: 1.5rem;
 }
 html {
   font-size: 100%;
@@ -88,11 +90,12 @@ footer {
 
 .header-wrapper h3 {
   font-size: 1.2rem;
-  font-style: italic;
+  margin-bottom: 10px;
 }
 
 .header-wrapper h4 {
   font-size: 0.8rem;
+
 }
 
 main {
@@ -104,7 +107,6 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
   font-size: 1.3rem;
   color: #777;
   margin: 0.5rem 0;
@@ -152,30 +154,29 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/texture1.svg) top left repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/texture2.svg) top left repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/texture3.svg) top left repeat;
 }
 
 .images ul {
   flex-direction: column;
-  text-align: center;
 }
 
 .images li {
   display: block;
   /*margin-right: 5vw;*/
   margin-bottom: 1rem;
+}
+
+.section-heading li {
+  margin-bottom: 2rem;
 }
 
 button {
@@ -251,7 +252,7 @@ p[class*="font-details-"] {
 }
 
 .adjectives ul {
-  font-size: 2rem;
+  font-size: 1rem;
   opacity: 0.5;
 }
 
@@ -259,9 +260,6 @@ p[class*="font-details-"] {
   flex-direction: column;
 }
 
-footer {
-  font-style: italic;
-}
 
 @media (min-width: 800px) {
   main {
@@ -283,6 +281,6 @@ footer {
 
 @media (min-width: 900px) {
   .adjectives ul {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
