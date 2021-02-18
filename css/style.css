@@ -155,7 +155,7 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/texture1.svg) top left repeat;
+  background: url(/img/sand.jpg) top left repeat;
 }
 
 .texture-swatch-2 {
